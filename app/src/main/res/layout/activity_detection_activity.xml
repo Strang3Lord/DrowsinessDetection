@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <com.pi.drowsinessdetection.CameraElement.CameraPreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+        <com.pi.drowsinessdetection.CameraElement.Overlay
+            android:id="@+id/faceOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.pi.drowsinessdetection.CameraElement.CameraPreview>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Status: "
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_margin="10dp"
+            android:id="@+id/textView3"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView4" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Stop"
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="40dp"
+            android:layout_marginHorizontal="5dp"
+            android:textColor="@color/white"
+            android:id="@+id/end"
+            android:backgroundTint="@color/colorPrimary"
+            android:background="#E0E0E0"
+            android:textSize="15dp"
+            />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Night Mode"
+            android:paddingHorizontal="40dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/toggleButton"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:textSize="15dp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>
+
